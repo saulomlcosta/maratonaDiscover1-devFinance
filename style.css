@@ -80,7 +80,7 @@ button:hover {
 
 .button.new {
   display: inline-block;
-  margin-bottom: .8rem;
+  margin-bottom: 1.5rem;
 }
 
 .button.cancel {
@@ -106,6 +106,7 @@ header {
   background: #2D4A22;
   padding: 2rem 0 10rem;
   text-align: center;
+  margin-bottom: 1.5rem;
 }
  
 #logo {
@@ -229,6 +230,8 @@ td.expense {
 
   opacity: 0;
   visibility: hidden;
+
+  z-index: 999;
 }
  
 .modal-overlay.active {
@@ -284,6 +287,7 @@ footer {
   text-align: center;
   padding: 4rem 0 2rem;
   color: var(--dark-blue);
+  margin-top: 1.5rem;
 
   opacity: 0.6;
 }

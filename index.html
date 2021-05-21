@@ -144,7 +144,10 @@
                           </div>
 
                           <div class="input-group actions">
-                            <a href="#" class="button cancel">Cancelar</a>
+                            <a 
+                            onclick="modalControls.close()"
+                            href="#" 
+                            class="button cancel">Cancelar</a>
                             <button>Salvar</button>
                           </div>
                       </form>
@@ -153,16 +156,22 @@
         </div>
 
         <footer>
-          <p>dev.finance$</p>
+          <p>2021 - dev.finance$</p>
         </footer>
         
         <script>
             const modalControls = {
                 open(){
-                    document.query
+                    document.
+                        querySelector('.modal-overlay')
+                        .classList
+                        .add('active')
                 },
                 close(){
-
+                  document.
+                        querySelector('.modal-overlay')
+                        .classList
+                        .remove('active')
                 }
             }
         </script>
