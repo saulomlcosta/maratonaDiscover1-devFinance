@@ -57,10 +57,11 @@
             <h2 class="sr-only">Transações</h2>
 
             <a href="#" 
-                onclick ="modalControls.open()" 
+                onclick ="modalControls()" 
                 class="button new">+ Nova Transação</a>
 
             <table id="data-table">
+
               <thead>
                 <tr>
                   <th>Descrição</th>
@@ -69,6 +70,7 @@
                   <th></th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
                   <td class="description">Luz</td>
@@ -145,7 +147,7 @@
 
                           <div class="input-group actions">
                             <a 
-                            onclick="modalControls.close()"
+                            onclick="modalControls()"
                             href="#" 
                             class="button cancel">Cancelar</a>
                             <button>Salvar</button>
@@ -159,21 +161,6 @@
           <p>2021 - dev.finance$</p>
         </footer>
         
-        <script>
-            const modalControls = {
-                open(){
-                    document.
-                        querySelector('.modal-overlay')
-                        .classList
-                        .add('active')
-                },
-                close(){
-                  document.
-                        querySelector('.modal-overlay')
-                        .classList
-                        .remove('active')
-                }
-            }
-        </script>
+        <script src="./script.js"></script>
     </body>
 </html>
